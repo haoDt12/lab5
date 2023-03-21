@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MY APP</title>
+</head>
+
+<body>
+    <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+
+        Chon file: <input type="file" name="myFiles" multiple>
+
+        <input type="submit" value="Upload your files" />
+    </form>
+    <br>
+
+    <hr>
+
+    <br>
+    <form action="/uploadJpeg" enctype="multipart/form-data" method="POST">
+
+        <input type="file" name="myImgJpeg" accept="image/*"/>
+
+        <input type="submit" value="Upload Photo Jpeg" />
+    </form>
+    <br>
+
+    <hr>
+
+    <br>
+    <!--   PHOTO-->
+    <form action="/uploadChange" enctype="multipart/form-data" method="POST">
+
+        <input type="file" name="myChangeImg" accept="image/*"/>
+
+        <input type="submit" value="Upload Photo Change" />
+    </form>
+</body>
+
+</html>
